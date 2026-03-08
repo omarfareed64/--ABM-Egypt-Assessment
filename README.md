@@ -250,6 +250,31 @@ python DOM_scraping.py
 
 ---
 
+## Publish to GitHub
+
+1. **Create a new repository** on [GitHub](https://github.com/new):
+   - Name: e.g. `abm-job-captcha` (or any name you prefer)
+   - Visibility: **Public**
+   - Do **not** add a README, .gitignore, or license (this project already has them)
+
+2. **Push this folder** (run from the project directory):
+
+   ```bash
+   cd "c:\Users\amora\Desktop\road to be good\Projects\ABM Job"
+   git remote add origin https://github.com/YOUR_USERNAME/abm-job-captcha.git
+   git branch -M main
+   git push -u origin main
+   ```
+
+   Replace `YOUR_USERNAME` and `abm-job-captcha` with your GitHub username and repo name.
+
+3. Optional: install [GitHub CLI](https://cli.github.com/) and run:
+   ```bash
+   gh repo create abm-job-captcha --public --source=. --push
+   ```
+
+---
+
 ## License and use
 
 Use for learning and assessment only. Respect the target sites’ terms of service and robots.txt.
